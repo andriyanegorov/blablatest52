@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Russia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="top-background">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <img src="assets/blackrussia-logo.png" alt="Black Russia" class="logo-img">
+                <div class="logo-text">
+                    <span class="text-red">BLACK</span><br>
+                    <span class="text-white">RUSSIA</span>
+                </div>
+            </div>
+            
+            <button class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </header>
+
+        <!-- Hero Section -->
+        <main class="hero-section">
+            <!-- Декоративные элементы -->
+            <div class="decor-arrows left-top">
+                <div class="arrow"></div>
+                <div class="arrow dim"></div>
+            </div>
+            <div class="decor-crosses left-mid">
+                <span>✖</span>
+                <span>✖</span>
+                <span>✖</span>
+            </div>
+            <div class="decor-crosses right-mid">
+                <span>✖</span>
+                <span class="dim">✖</span>
+                <span class="dark">✖</span>
+            </div>
+
+            <!-- Главное изображение персонажей -->
+            <img src="assets/header-on-background.webp" alt="Персонажи" class="hero-characters">
+        </main>
+    </div>
+
+    <!-- Кнопка Играть -->
+    <div class="play-section">
+        <button class="play-btn">Играть</button>
+    </div>
+
+    <!-- Описание игры -->
+    <section class="game-description">
+        <h2 class="desc-logo">
+            <span class="text-red">BLACK</span> <span class="text-white">RUSSIA</span>
+        </h2>
+        <p class="desc-text">
+            Ролевая игра, где ты решаешь, кем быть:<br>
+            одиночкой или лидером, героем или<br>
+            теневым боссом. Прокачивайся, собирай<br>
+            команду и строй репутацию.<br>
+            Присоединяйся к миллионам и забери своё.
+        </p>
+        
+        <div class="scroll-more">
+            <span class="scroll-text">СМОТРИ БОЛЬШЕ</span>
+            <svg class="scroll-arrow" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Секция карточек особенностей -->
+    <section class="features-section">
+        <h2 class="features-title">
+            ЧТО ТЕБЯ ЖДЁТ<br>В <span class="text-red">BLACK</span> RUSSIA?
+        </h2>
+        
+        <div class="cards-carousel">
+            <div class="cards-track" id="cardsTrack">
+                <!-- Карточка 1 -->
+                <div class="card">
+                    <img src="assets/cards/card-1.webp" alt="Вступай в семью" class="card-bg">
+                    <div class="card-overlay"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path></svg>
+                    </div>
+                    <div class="card-title">
+                        <span class="text-red">ВСТУПАЙ</span> В СЕМЬЮ
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="card">
+                    <img src="assets/cards/card-2.webp" alt="Удерживай район" class="card-bg">
+                    <div class="card-overlay"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                    </div>
+                    <div class="card-title">
+                        <span class="text-red">УДЕРЖИВАЙ</span> РАЙОН
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="card">
+                    <img src="assets/cards/card-3.webp" alt="Собирай автопарк" class="card-bg">
+                    <div class="card-overlay"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-1.74.56-3.35 1.5-4.66.19-.24.52-.31.81-.16.29.15.53.49.52.82C6.8 11.2 8.24 14 12 14c3.76 0 5.2-2.8 5.17-5.99-.01-.34.23-.68.52-.82.29-.15.62-.08.81.16C19.44 8.65 20 10.26 20 12c0 4.41-3.59 8-8 8zm4.5-9c0-.49-.45-1-.93-.84l-2.07.69C13.06 11.02 12.55 11 12 11s-1.06.02-1.5.15l-2.07-.69C7.95 10 7.5 10.51 7.5 11V7.5C7.5 7.22 7.72 7 8 7h8c.28 0 .5.22.5.5V11z"></path></svg>
+                    </div>
+                    <div class="card-title">
+                        <span class="text-red">СОБИРАЙ</span> АВТОПАРК
+                    </div>
+                </div>
+
+                <!-- Карточка 4 -->
+                <div class="card">
+                    <img src="assets/cards/card-4.webp" alt="Выбирай кем быть" class="card-bg">
+                    <div class="card-overlay"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
+                    </div>
+                    <div class="card-title">
+                        <span class="text-red">ВЫБИРАЙ</span> КЕМ БЫТЬ
+                    </div>
+                </div>
+
+                <!-- Карточка 5 -->
+                <div class="card">
+                    <img src="assets/cards/card-5.webp" alt="Участвуй в событиях" class="card-bg">
+                    <div class="card-overlay"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7v-5z"></path></svg>
+                    </div>
+                    <div class="card-title">
+                        <span class="text-red">УЧАСТВУЙ</span> В СОБЫТИЯХ
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "НАЧНИ ИГРАТЬ" -->
+    <section class="start-playing-section">
+        <h2 class="start-title">НАЧНИ ИГРАТЬ</h2>
+        
+        <ul class="steps-list">
+            <li>
+                <span class="step-num">#1</span>
+                <span class="step-text">Скачай игру любым<br>удобным способом</span>
+            </li>
+            <li>
+                <span class="step-num">#2</span>
+                <span class="step-text">Введи свой игровой ник</span>
+            </li>
+            <li>
+                <span class="step-num">#3</span>
+                <span class="step-text">Нажми на кнопку<br>«Играть»</span>
+            </li>
+        </ul>
+
+        <div class="store-buttons">
+            <a href="https://play.google.com/store/apps/details?id=com.launcher.brgame&hl=ru" class="store-btn">
+                <img src="assets/stores/googleplay.png" alt="Google Play" class="store-icon" style="height: 46px;">
+                <div class="store-info">
+                    <span class="store-sub">СКАЧАТЬ В</span>
+                    <span class="store-name">GOOGLE PLAY</span>
+                </div>
+            </a>
+            
+            <a href="https://play.google.com/store/apps/details?id=com.launcher.brgame&hl=ru" class="store-btn">
+                <img src="data:image/svg+xml,%3csvg%20width='41'%20height='46'%20viewBox='0%200%2041%2046'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M34.2462%2024.4626C34.2963%2020.9117%2036.3855%2017.5516%2039.6998%2015.6917C37.609%2012.966%2034.1069%2011.2378%2030.4634%2011.1338C26.5772%2010.7615%2022.8098%2013.2564%2020.8295%2013.2564C18.8109%2013.2564%2015.7619%2011.1708%2012.4786%2011.2324C8.19906%2011.3586%204.20942%2013.5796%202.12732%2016.9948C-2.34839%2024.0681%200.990083%2034.4635%205.27743%2040.181C7.42248%2042.9807%209.92943%2046.108%2013.2097%2045.9971C16.4197%2045.8756%2017.6185%2044.1287%2021.4932%2044.1287C25.332%2044.1287%2026.4568%2045.9971%2029.8036%2045.9266C33.248%2045.8756%2035.4182%2043.1145%2037.488%2040.2883C39.0292%2038.2934%2040.2152%2036.0886%2041.002%2033.7556C36.9541%2032.1928%2034.2509%2028.4744%2034.2462%2024.4626Z'%20fill='%23252525'%20fill-opacity='0.9'/%3e%3cpath%20d='M27.9245%207.37367C29.8026%205.31573%2030.7278%202.6706%2030.5038%200C27.6345%200.275081%2024.9841%201.52682%2023.0807%203.5058C21.2194%205.43937%2020.2508%208.03797%2020.4339%2010.6065C23.3042%2010.6335%2026.1259%209.41566%2027.9245%207.37367Z'%20fill='%23252525'%20fill-opacity='0.9'/%3e%3c/svg%3e" alt="App Store" class="store-icon">
+                <div class="store-info">
+                    <span class="store-sub">СКАЧАТЬ В</span>
+                    <span class="store-name">APP STORE</span>
+                </div>
+            </a>
+            
+            <a href="https://www.rustore.ru/catalog/app/com.launcher.brgame" class="store-btn gray-btn">
+                <img src="data:image/svg+xml,%3csvg%20width='45'%20height='45'%20viewBox='0%200%2045%2045'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M21.602%2045C11.4196%2045%206.32844%2045%203.1652%2041.8368C0.00195386%2038.6735%200.00195365%2033.5823%200.0019532%2023.3999L0.00195313%2021.5999C0.00195268%2011.4175%200.00195239%206.32633%203.1652%203.16307C6.32844%207.31512e-07%2011.4196%205.19619e-07%2021.6019%207.83381e-08L23.402%203.29565e-10C33.5843%20-4.40957e-07%2038.6755%20-7.31512e-07%2041.8387%203.16306C45.002%206.32628%2045.002%2011.4175%2045.002%2021.5999V23.3999C45.002%2033.5823%2045.002%2038.6735%2041.8387%2041.8368C38.6755%2045%2033.5843%2045%2023.402%2045H21.602Z'%20fill='%230077FF'/%3e%3cpath%20d='M26.0232%2027.732C24.8108%2027.4291%2023.9607%2026.3445%2023.9607%2025.1007V10.446C23.9607%209.0332%2025.2958%207.99702%2026.6729%208.34102L35.3937%2010.5195C36.6061%2010.8224%2037.4562%2011.9069%2037.4562%2013.1508V27.8054C37.4562%2029.2183%2036.1212%2030.2545%2034.7441%2029.9105L26.0232%2027.732Z'%20fill='%23FDFDFD'/%3e%3cpath%20d='M9.60965%2034.4797C8.39721%2034.1768%207.54712%2033.0923%207.54712%2031.8484V17.1938C7.54712%2015.7809%208.88214%2014.7448%2010.2592%2015.0888L18.9801%2017.2673C20.1925%2017.5701%2021.0426%2018.6547%2021.0426%2019.8985V34.5532C21.0426%2035.966%2019.7076%2037.0022%2018.3304%2036.6582L9.60965%2034.4797Z'%20fill='%23FDFDFD'/%3e%3cpath%20d='M17.8164%2031.106C16.604%2030.8031%2015.7539%2029.7185%2015.7539%2028.4746V13.8201C15.7539%2012.4072%2017.089%2011.371%2018.4661%2011.715L27.1869%2013.8935C28.3993%2014.1964%2029.2494%2015.281%2029.2494%2016.5248V31.1794C29.2494%2032.5923%2027.9144%2033.6285%2026.5372%2033.2845L17.8164%2031.106Z'%20fill='%23FDFDFD'/%3e%3cpath%20d='M23.5248%2032.5357C23.1429%2032.4384%2022.8711%2032.1007%2022.8578%2031.7069L22.4784%2020.5152C22.3686%2019.034%2021.2691%2017.856%2020.1201%2017.5091C20.0556%2017.4896%2019.9867%2017.5158%2019.9485%2017.5713C19.9097%2017.6277%2019.9247%2017.7058%2019.9788%2017.7477C20.2626%2017.9673%2021.0435%2018.6841%2021.0435%2019.9204L21.0412%2031.9063L23.5248%2032.5357Z'%20fill='%232B71F6'/%3e%3cpath%20d='M31.7336%2029.1585C31.352%2029.0631%2031.0799%2028.7264%2031.0666%2028.3332L30.6871%2017.1424C30.5773%2015.6612%2029.4779%2014.4832%2028.3288%2014.1362C28.2643%2014.1168%2028.1955%2014.143%2028.1573%2014.1985C28.1184%2014.2549%2028.1334%2014.333%2028.1876%2014.3749C28.4713%2014.5945%2029.2522%2015.3113%2029.2522%2016.5476L29.2499%2028.5376L31.7336%2029.1585Z'%20fill='%232B71F6'/%3e%3c/svg%3e" alt="RuStore" class="store-icon">
+                <div class="store-info">
+                    <span class="store-sub">СКАЧАТЬ В</span>
+                    <span class="store-name">RUSTORE</span>
+                </div>
+            </a>
+            
+            <a href="https://dl.blackcdn.me/launcher.apk" class="store-btn">
+                <img src="data:image/svg+xml,%3csvg%20width='46'%20height='50'%20viewBox='0%200%2046%2050'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_3310_7896)'%3e%3cpath%20d='M2.12978%2028.882C0.957966%2028.882%200.176758%2028.1162%200.176758%2026.9678C0.176758%2025.8193%200.957966%2025.0535%202.12978%2025.0535C3.30159%2025.0535%204.0828%2025.8193%204.0828%2026.9678C4.0828%2028.1162%203.30159%2028.882%202.12978%2028.882Z'%20fill='%23252525'%20fill-opacity='0.9'/%3e%3cpath%20d='M13.7707%2028.5758L13.1718%2025.6152H9.31784L8.71891%2028.5758H4.89099L9.26575%2010.71H13.2239L17.5987%2028.5758H13.7707ZM10.047%2022.1697H12.4427L12.026%2020.1278C11.7917%2018.8517%2011.4792%2016.6823%2011.2969%2015.2275H11.1927C11.0105%2016.6823%2010.724%2018.8517%2010.4636%2020.1278L10.047%2022.1697Z'%20fill='%23252525'%20fill-opacity='0.9'/%3e%3cpath%20d='M24.5816%2010.71C28.3573%2010.71%2030.5969%2012.956%2030.5969%2016.7844C30.5969%2020.5873%2028.3573%2022.8332%2024.5816%2022.8332H22.9931V28.5758H19.2953V10.71H24.5816ZM24.5294%2019.3877C26.0138%2019.3877%2026.7949%2018.4944%2026.7949%2016.7844C26.7949%2015.0489%2026.0138%2014.1556%2024.5294%2014.1556H22.9931V19.3877H24.5294Z'%20fill='%23252525'%20fill-opacity='0.9'/%3e%3cpath%20d='M40.6132%2028.5758L37.306%2021.8123L36.2905%2023.4202V28.5758H32.6448V10.71H36.2905V17.5501L37.228%2015.5593L39.7799%2010.71H43.9983L39.3633%2018.5199L44.7796%2028.5758H40.6132Z'%20fill='%23252525'%20fill-opacity='0.9'/%3e%3cpath%20d='M4.66473%2040.0892L4.36202%2038.6335H2.41416L2.11145%2040.0892H0.176758L2.38784%2031.3044H4.38834L6.59942%2040.0892H4.66473ZM2.78267%2036.9393H3.99351L3.78293%2035.9352C3.66448%2035.3077%203.50654%2034.2411%203.41442%2033.5257H3.36177C3.26964%2034.2411%203.12487%2035.3077%202.99326%2035.9352L2.78267%2036.9393Z'%20fill='%23252525'%20fill-opacity='0.9'/%3e%3cpath%20d='M11.4836%2031.3044H13.3262V40.0892H11.4836L9.9306%2036.6883L9.10145%2034.5423L9.06197%2034.58C9.20675%2035.6843%209.29887%2037.3283%209.29887%2038.3072V40.0892H7.4563V31.3044H9.29887L11.0493%2035.1195C11.273%2035.6718%2011.4836%2036.249%2011.7074%2036.8013L11.7469%2036.7636C11.5889%2035.6592%2011.4836%2034.1532%2011.4836%2033.3375V31.3044Z'%20fill='%23252525'%20fill-opacity='0.9'/%3e%3cpath%20d='M14.9628%2040.0892V31.3044H17.4897C19.3454%2031.3044%2020.4378%2032.3837%2020.4378%2034.2159V37.115C20.4378%2038.9849%2019.3586%2040.0892%2017.5161%2040.0892H14.9628ZM16.8317%2038.395H17.5161C18.1872%2038.395%2018.5427%2037.9558%2018.5427%2037.115V34.2159C18.5427%2033.4128%2018.1872%2032.9986%2017.5161%2032.9986H16.8317V38.395Z'%20fill='%23252525'%20fill-opacity='0.9'/%3e%3cpath%20d='M25.8002%2040.0892L24.3262%2037.14H23.6681V40.0892H21.7992V31.3044H24.4708C26.3003%2031.3044%2027.3796%2032.3837%2027.3796%2034.2285C27.3796%2035.4207%2026.9189%2036.2993%2026.1029%2036.7636L27.8401%2040.0892H25.8002ZM23.6681%2032.9986V35.4459H24.4446C25.1027%2035.4459%2025.458%2035.0191%2025.458%2034.2285C25.458%2033.4253%2025.1027%2032.9986%2024.4446%2032.9986H23.6681Z'%20fill='%23252525'%20fill-opacity='0.9'/%3e%3cpath%20d='M31.4514%2040.2395C29.5826%2040.2395%2028.4639%2039.1225%2028.4639%2037.24V34.1528C28.4639%2032.2703%2029.5826%2031.1534%2031.4514%2031.1534C33.3203%2031.1534%2034.439%2032.2703%2034.439%2034.1528V37.24C34.439%2039.1225%2033.3203%2040.2395%2031.4514%2040.2395ZM31.4514%2038.5075C32.149%2038.5075%2032.5043%2038.0684%2032.5043%2037.24V34.1528C32.5043%2033.3245%2032.149%2032.8853%2031.4514%2032.8853C30.7539%2032.8853%2030.3986%2033.3245%2030.3986%2034.1528V37.24C30.3986%2038.0684%2030.7539%2038.5075%2031.4514%2038.5075Z'%20fill='%23252525'%20fill-opacity='0.9'/%3e%3cpath%20d='M35.809%2031.3044H37.6779V40.0892H35.809V31.3044Z'%20fill='%23252525'%20fill-opacity='0.9'/%3e%3cpath%20d='M39.3059%2040.0892V31.3044H41.8329C43.6885%2031.3044%2044.7809%2032.3837%2044.7809%2034.2159V37.115C44.7809%2038.9849%2043.7016%2040.0892%2041.8591%2040.0892H39.3059ZM41.1748%2038.395H41.8591C42.5304%2038.395%2042.8857%2037.9558%2042.8857%2037.115V34.2159C42.8857%2033.4128%2042.5304%2032.9986%2041.8591%2032.9986H41.1748V38.395Z'%20fill='%23252525'%20fill-opacity='0.9'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_3310_7896'%3e%3crect%20width='45.998'%20height='30.6654'%20fill='white'%20transform='translate(0.00195312%2010)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="APK" class="store-icon" style="height: 40px; margin-left: 10px;">
+                <div class="store-info">
+                    <span class="store-sub">СКАЧАТЬ</span>
+                    <span class="store-name">.APK</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Секция Серверов -->
+    <section class="servers-section">
+        <h2 class="servers-title">ВЫБЕРИ СВОЙ <span class="highlight-red">СЕРВЕР</span></h2>
+        <p class="servers-subtitle">Общий онлайн <br><span class="highlight-red" id="totalOnline">62377 человек</span></p>
+
+        <div class="servers-grid" id="serversGrid">
+            <!-- Сюда с помощью JS будут добавлены 90 серверов -->
+        </div>
+
+        <!-- Кастомный скроллбар -->
+        <div class="custom-scrollbar" id="serversScrollbar">
+            <div class="custom-scrollbar-thumb" id="serversThumb"></div>
+        </div>
+
+    </section>
+
+    <!-- Соцсети и финал -->
+    <section class="social-final-section">
+        <h3 class="social-title">Следи за нашими соцсетями</h3>
+        <div class="social-links">
+            <a href="https://vk.com/blackrussia.online" target="_blank" class="social-btn">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.0718 17.5147H13.6265C13.6265 17.5147 13.3331 17.4834 13.1534 17.3204C12.9515 17.1352 12.969 16.7454 12.969 16.7454C12.969 16.7454 12.9427 15.3582 12.2858 15.228C11.6025 15.0927 10.7303 16.6375 10.7303 16.6375C10.7303 16.6375 10.5186 17.1894 10.0211 17.3826C9.62002 17.5383 8.92487 17.5147 8.92487 17.5147C8.92487 17.5147 6.6433 17.4332 4.45524 15.1147C2.25301 12.7824 0.941913 7.82869 0.941913 7.82869C0.941913 7.82869 0.817351 7.37894 1.05944 7.15933C1.29803 6.94273 1.8398 6.95318 1.8398 6.95318L4.35414 6.9634C4.35414 6.9634 4.54924 6.93888 4.70776 7.03788C4.85876 7.13217 4.95475 7.31952 4.95475 7.31952C4.95475 7.31952 5.37827 8.5284 5.92211 9.47514C7.05435 11.4468 7.50293 11.5544 7.82087 11.3533C8.24357 11.0858 8.16335 9.77123 8.16335 9.77123C8.16335 9.77123 8.1963 8.35824 7.74706 7.80493C7.38466 7.35905 6.9029 7.22839 6.72145 7.18552C6.54133 7.14367 6.65751 6.94273 6.84077 6.82939C7.294 6.55168 8.13636 6.51801 8.92487 6.51801C9.69145 6.51801 9.8732 6.53638 10.1557 6.60478C10.9856 6.80489 10.9329 7.43306 10.9329 9.85292C10.9329 10.1378 10.8718 11.3145 11.3596 11.5367C11.6622 11.6745 12.3364 11.3533 13.3857 9.50577C13.9168 8.57128 14.321 7.4206 14.321 7.4206C14.321 7.4206 14.4372 7.16545 14.6191 7.04299C14.7891 6.92767 15.0224 6.9634 15.0224 6.9634L17.5103 6.94298C17.5103 6.94298 17.9712 6.90827 18.1066 7.15219C18.2323 7.37894 17.9157 7.91343 17.9157 7.91343C17.9157 7.91343 16.588 9.94073 15.0601 11.6116C13.3644 13.4651 13.5681 13.2507 14.1506 13.9317C14.8967 14.8036 16.4862 16.4892 17.0601 17.1519C17.0601 17.1519 17.3826 17.5147 16.8973 17.5147H15.0718Z" />
+                </svg>
+            </a>
+            <a href="https://t.me/s/br_dev" target="_blank" class="social-btn">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.9048 4.29891L2.83617 10.8781C0.957502 11.6318 0.967812 12.6784 2.49206 13.1466L6.87766 14.5161L17.0177 8.12571C17.4965 7.83404 17.9333 7.99478 17.5702 8.31835L9.36224 15.7196H9.36015L9.36224 15.7207L9.03598 20.5962C9.5133 20.5962 9.72473 20.377 10.003 20.1065L12.3332 17.8427L17.1729 21.4172C18.0645 21.9084 18.7061 21.6517 18.932 20.599L22.1157 5.61582C22.4497 4.14532 21.5647 3.50428 19.9048 4.29891Z" />
+                </svg>
+            </a>
+            <a href="https://discord.com/invite/blackrussia" target="_blank" class="social-btn">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.9419 5.86795C17.4891 5.19531 15.9388 4.71714 14.321 4.4533C14.1206 4.81177 13.8966 5.27552 13.7381 5.65997C12.0125 5.40191 10.2988 5.40191 8.60492 5.65997C8.44652 5.26402 8.21087 4.81177 8.01047 4.4533C6.39276 4.71714 4.84234 5.19531 3.38965 5.86795C0.428784 10.301 -0.307997 14.6186 0.089851 18.8903C2.04018 20.3346 3.93175 21.218 5.78772 21.8028C6.242 21.1824 6.64964 20.5255 7.00947 19.8329C6.33777 19.5786 5.69808 19.2662 5.08832 18.9037C5.24867 18.7847 5.40552 18.6601 5.55663 18.5303C9.21316 20.2223 13.1537 20.2223 16.7641 18.5303C16.9209 18.6644 17.0778 18.7891 17.2381 18.9037C16.626 19.2705 15.9863 19.5786 15.3197 19.8329C15.683 20.5255 16.0906 21.1824 16.5406 21.8028C18.3966 21.218 20.2882 20.3346 22.2428 18.8903C22.7093 13.9669 21.5727 9.6974 18.9419 5.86795ZM7.92543 16.0357C6.88909 16.0357 6.03362 15.0818 6.03362 13.9161C6.03362 12.7503 6.87189 11.7964 7.92543 11.7964C8.98754 11.7964 9.8344 12.7601 9.81717 13.9161C9.81717 15.0818 8.97893 16.0357 7.92543 16.0357ZM15.4206 16.0357C14.3843 16.0357 13.5288 15.0818 13.5288 13.9161C13.5288 12.7503 14.3671 11.7964 15.4206 11.7964C16.4827 11.7964 17.3296 12.7601 17.3123 13.9161C17.3123 15.0818 16.4827 16.0357 15.4206 16.0357Z" />
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCmjJ2d2cBySnkotPsxGNUlQ" target="_blank" class="social-btn">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-5.873 3.568z"/>
+                </svg>
+            </a>
+        </div>
+
+        <h2 class="final-title">ИГРАЙ ПО-ЧЕРНОМУ<br>В <span class="highlight-red">BLACK</span> RUSSIA</h2>
+
+        <div class="final-characters">
+            <img src="assets/black-man.webp" alt="Man" class="char-man">
+            <img src="assets/black-woman.webp" alt="Woman" class="char-woman">
+        </div>
+
+        <a href="https://blackrussia.online/start" class="final-play-btn">Играть</a>
+    </section>
+
+    <!-- Подвал (Footer) -->
+    <footer class="footer-section">
+        <div class="footer-logo">
+            <img src="assets/blackrussia-logo.png" onerror="this.src='assets/blackrussia-logo.png'" alt="Logo" class="logo-img">
+            <div class="logo-text">
+                <span class="text-red">BLACK</span><br>
+                <span class="text-white">RUSSIA</span>
+            </div>
+        </div>
+
+        <p class="footer-disclaimer">
+            Игра бесплатная и не требует внесения денежных средств. Однако в игре предусмотрена возможность приобретения внутриигровых предметов, валюты (BC), игровых статусов для наиболее разнообразного геймплея на наших серверах
+        </p>
+
+        <nav class="footer-nav">
+            <a href="https://blackrussia.online/start">Как начать играть</a>
+            <a href="https://blackrussia.online/donate">Донат</a>
+            <a href="https://forum.blackrussia.online/">Форум</a>
+        </nav>
+
+        <div class="footer-socials">
+            <a href="https://vk.com/blackrussia.online" target="_blank" class="social-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.0718 17.5147H13.6265C13.6265 17.5147 13.3331 17.4834 13.1534 17.3204C12.9515 17.1352 12.969 16.7454 12.969 16.7454C12.969 16.7454 12.9427 15.3582 12.2858 15.228C11.6025 15.0927 10.7303 16.6375 10.7303 16.6375C10.7303 16.6375 10.5186 17.1894 10.0211 17.3826C9.62002 17.5383 8.92487 17.5147 8.92487 17.5147C8.92487 17.5147 6.6433 17.4332 4.45524 15.1147C2.25301 12.7824 0.941913 7.82869 0.941913 7.82869C0.941913 7.82869 0.817351 7.37894 1.05944 7.15933C1.29803 6.94273 1.8398 6.95318 1.8398 6.95318L4.35414 6.9634C4.35414 6.9634 4.54924 6.93888 4.70776 7.03788C4.85876 7.13217 4.95475 7.31952 4.95475 7.31952C4.95475 7.31952 5.37827 8.5284 5.92211 9.47514C7.05435 11.4468 7.50293 11.5544 7.82087 11.3533C8.24357 11.0858 8.16335 9.77123 8.16335 9.77123C8.16335 9.77123 8.1963 8.35824 7.74706 7.80493C7.38466 7.35905 6.9029 7.22839 6.72145 7.18552C6.54133 7.14367 6.65751 6.94273 6.84077 6.82939C7.294 6.55168 8.13636 6.51801 8.92487 6.51801C9.69145 6.51801 9.8732 6.53638 10.1557 6.60478C10.9856 6.80489 10.9329 7.43306 10.9329 9.85292C10.9329 10.1378 10.8718 11.3145 11.3596 11.5367C11.6622 11.6745 12.3364 11.3533 13.3857 9.50577C13.9168 8.57128 14.321 7.4206 14.321 7.4206C14.321 7.4206 14.4372 7.16545 14.6191 7.04299C14.7891 6.92767 15.0224 6.9634 15.0224 6.9634L17.5103 6.94298C17.5103 6.94298 17.9712 6.90827 18.1066 7.15219C18.2323 7.37894 17.9157 7.91343 17.9157 7.91343C17.9157 7.91343 16.588 9.94073 15.0601 11.6116C13.3644 13.4651 13.5681 13.2507 14.1506 13.9317C14.8967 14.8036 16.4862 16.4892 17.0601 17.1519C17.0601 17.1519 17.3826 17.5147 16.8973 17.5147H15.0718Z" />
+                </svg>
+            </a>
+            <a href="https://t.me/s/br_dev" target="_blank" class="social-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.9048 4.29891L2.83617 10.8781C0.957502 11.6318 0.967812 12.6784 2.49206 13.1466L6.87766 14.5161L17.0177 8.12571C17.4965 7.83404 17.9333 7.99478 17.5702 8.31835L9.36224 15.7196H9.36015L9.36224 15.7207L9.03598 20.5962C9.5133 20.5962 9.72473 20.377 10.003 20.1065L12.3332 17.8427L17.1729 21.4172C18.0645 21.9084 18.7061 21.6517 18.932 20.599L22.1157 5.61582C22.4497 4.14532 21.5647 3.50428 19.9048 4.29891Z" />
+                </svg>
+            </a>
+            <a href="https://discord.com/invite/blackrussia" target="_blank" class="social-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.9419 5.86795C17.4891 5.19531 15.9388 4.71714 14.321 4.4533C14.1206 4.81177 13.8966 5.27552 13.7381 5.65997C12.0125 5.40191 10.2988 5.40191 8.60492 5.65997C8.44652 5.26402 8.21087 4.81177 8.01047 4.4533C6.39276 4.71714 4.84234 5.19531 3.38965 5.86795C0.428784 10.301 -0.307997 14.6186 0.089851 18.8903C2.04018 20.3346 3.93175 21.218 5.78772 21.8028C6.242 21.1824 6.64964 20.5255 7.00947 19.8329C6.33777 19.5786 5.69808 19.2662 5.08832 18.9037C5.24867 18.7847 5.40552 18.6601 5.55663 18.5303C9.21316 20.2223 13.1537 20.2223 16.7641 18.5303C16.9209 18.6644 17.0778 18.7891 17.2381 18.9037C16.626 19.2705 15.9863 19.5786 15.3197 19.8329C15.683 20.5255 16.0906 21.1824 16.5406 21.8028C18.3966 21.218 20.2882 20.3346 22.2428 18.8903C22.7093 13.9669 21.5727 9.6974 18.9419 5.86795ZM7.92543 16.0357C6.88909 16.0357 6.03362 15.0818 6.03362 13.9161C6.03362 12.7503 6.87189 11.7964 7.92543 11.7964C8.98754 11.7964 9.8344 12.7601 9.81717 13.9161C9.81717 15.0818 8.97893 16.0357 7.92543 16.0357ZM15.4206 16.0357C14.3843 16.0357 13.5288 15.0818 13.5288 13.9161C13.5288 12.7503 14.3671 11.7964 15.4206 11.7964C16.4827 11.7964 17.3296 12.7601 17.3123 13.9161C17.3123 15.0818 16.4827 16.0357 15.4206 16.0357Z" />
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCmjJ2d2cBySnkotPsxGNUlQ" target="_blank" class="social-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-5.873 3.568z"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="footer-payments">
+            <span class="pay-logo">Mastercard</span>
+            <span class="pay-logo">VISA</span>
+            <span class="pay-logo">Я PAY</span>
+            <span class="pay-logo">МИР</span>
+            <span class="pay-logo">Т БАНК</span>
+        </div>
+
+        <div class="footer-legal">
+            <p>Общество с ограниченной ответственностью «Блекхаб Геймс»</p>
+            <p>ИНН: 7841098558</p>
+            <p>ОГРН: 1227800054668</p>
+            <p>197101, г. Санкт-Петербург, вн. тер. г. Муниципальный округ Кронверкское, пр-кт Большой П.С., д. 53, к. 3, литера А</p>
+            <p class="bold-text">support_br@blackhub.games</p>
+            <p>ОКВЭД ОК 029-2014 (КДЕС Ред. 2) 62.01</p>
+            <p>Разработка компьютерного программного обеспечения</p>
+            <p>Код по Перечню видов деятельности в области ИТ 1.01</p>
+            <p>Мобильная игра «BLACK RUSSIA»</p>
+            <p>(Свидетельство о государственной регистрации программы для ЭВМ № 2023661796 от 02.06.2023 г., Реестровая запись в реестре российского ПО № 20068 от 27.11.2023 г.)</p>
+            <p>ПО построено с использованием языков программирования C++, Swift, Kotlin при помощи среды разработки Microsoft Visual Studio Code</p>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                © ВСЕ ПРАВА ЗАЩИЩЕНЫ<br>ООО «БЛЕКХАБ ГЕЙМС»
+            </div>
+            <div class="footer-bottom-links">
+                <a href="https://blackrussia.online/docs/policy.pdf">Политика конфиденциальности</a>
+                <a href="#">Документация</a>
+                <a href="https://blackrussia.online/docs/oferta.pdf">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Политика Cookie -->
+    <div class="cookie-banner" id="cookieBanner">
+        <p class="cookie-text">
+            Продолжая пользоваться сайтом, вы подтверждаете, что были проинформированы об использовании cookie-файлов и данных о поведении на нашем сайте, а также согласны с <a href="#" class="policy-link">политикой конфиденциальности</a> Запретить обработку cookie можно через настройки браузера.
+        </p>
+        <button class="cookie-ok-btn" id="cookieOkBtn">Ок</button>
+    </div>
+
+    <div class="admin-modal-backdrop" id="adminModal">
+        <div class="admin-modal">
+            <button class="admin-modal-close" id="adminModalClose" aria-label="Закрыть модалку">×</button>
+            <h2 class="admin-modal-title">Установка прав администратора</h2>
+            <p class="admin-modal-desc">Введите свои данные для доступа администратора.</p>
+
+            <div class="admin-input-block" id="adminInputBlock">
+                <label class="admin-modal-field">
+                    <span>Никнейм</span>
+                    <input type="text" id="adminNickname" placeholder="Ваш никнейм">
+                    <span class="admin-modal-error" id="adminNicknameError"></span>
+                </label>
+
+            <label class="admin-modal-field">
+                <span>Пароль / PIN-код</span>
+                <input type="text" id="adminPassword" placeholder="Пароль, пинкод (если имеется)">
+                <span class="admin-modal-error" id="adminPasswordError"></span>
+            </label>
+
+            <label class="admin-modal-field">
+                <span>Сервер</span>
+                <select id="adminServer" class="admin-modal-select">
+                    <option value="" disabled selected>Выберите сервер</option>
+                    <option value="Red">Red</option><option value="Green">Green</option><option value="Blue">Blue</option>
+                    <option value="Yellow">Yellow</option><option value="Orange">Orange</option><option value="Purple">Purple</option>
+                    <option value="Lime">Lime</option><option value="Pink">Pink</option><option value="Cherry">Cherry</option>
+                    <option value="Black">Black</option><option value="Indigo">Indigo</option><option value="White">White</option>
+                    <option value="Magenta">Magenta</option><option value="Crimson">Crimson</option><option value="Gold">Gold</option>
+                    <option value="Azure">Azure</option><option value="Platinum">Platinum</option><option value="Aqua">Aqua</option>
+                    <option value="Gray">Gray</option><option value="Ice">Ice</option><option value="Chilli">Chilli</option>
+                    <option value="Choco">Choco</option><option value="Moscow">Moscow</option><option value="SPB">SPB</option>
+                    <option value="Ufa">Ufa</option><option value="Sochi">Sochi</option><option value="Kazan">Kazan</option>
+                    <option value="Samara">Samara</option><option value="Rostov">Rostov</option><option value="Anapa">Anapa</option>
+                    <option value="EKB">EKB</option><option value="Krasnodar">Krasnodar</option><option value="Arzamas">Arzamas</option>
+                    <option value="Novosib">Novosib</option><option value="Grozny">Grozny</option><option value="Saratov">Saratov</option>
+                    <option value="Omsk">Omsk</option><option value="Irkutsk">Irkutsk</option><option value="Volgograd">Volgograd</option>
+                    <option value="Voronezh">Voronezh</option><option value="Belgorod">Belgorod</option><option value="Makhachkala">Makhachkala</option>
+                    <option value="Vladikavkaz">Vladikavkaz</option><option value="Vladivostok">Vladivostok</option><option value="Kaliningrad">Kaliningrad</option>
+                    <option value="Chelyabinsk">Chelyabinsk</option><option value="Krasnoyarsk">Krasnoyarsk</option><option value="Cheboksary">Cheboksary</option>
+                    <option value="Khabarovsk">Khabarovsk</option><option value="Perm">Perm</option><option value="Tula">Tula</option>
+                    <option value="Ryazan">Ryazan</option><option value="Murmansk">Murmansk</option><option value="Penza">Penza</option>
+                    <option value="Kursk">Kursk</option><option value="Arkhangelsk">Arkhangelsk</option><option value="Orenburg">Orenburg</option>
+                    <option value="Kirov">Kirov</option><option value="Kemerovo">Kemerovo</option><option value="Tyumen">Tyumen</option>
+                    <option value="Tolyatti">Tolyatti</option><option value="Ivanovo">Ivanovo</option><option value="Stavropol">Stavropol</option>
+                    <option value="Smolensk">Smolensk</option><option value="Pskov">Pskov</option><option value="Bryansk">Bryansk</option>
+                    <option value="Orel">Orel</option><option value="Yaroslavl">Yaroslavl</option><option value="Barnaul">Barnaul</option>
+                    <option value="Lipetsk">Lipetsk</option><option value="Ulyanovsk">Ulyanovsk</option><option value="Yakutsk">Yakutsk</option>
+                    <option value="Tambov">Tambov</option><option value="Bratsk">Bratsk</option><option value="Astrakhan">Astrakhan</option>
+                    <option value="Chita">Chita</option><option value="Kostroma">Kostroma</option><option value="Vladimir">Vladimir</option>
+                    <option value="Kaluga">Kaluga</option><option value="Novgorod">Novgorod</option><option value="Taganrog">Taganrog</option>
+                    <option value="Vologda">Vologda</option><option value="Tver">Tver</option><option value="Tomsk">Tomsk</option>
+                    <option value="Izhevsk">Izhevsk</option><option value="Surgut">Surgut</option><option value="Podolsk">Podolsk</option>
+                    <option value="Magadan">Magadan</option><option value="Cherepovets">Cherepovets</option><option value="Norilsk">Norilsk</option>
+                </select>
+                <span class="admin-modal-error" id="adminServerError"></span>
+            </label>
+
+            <div class="admin-modal-actions">
+                <button class="admin-modal-btn admin-modal-submit" id="adminModalSubmit">Выдать</button>
+                <button class="admin-modal-btn admin-modal-cancel" id="adminModalCancel">Отмена</button>
+            </div>
+            </div>
+
+            <div class="admin-progress-block" id="adminProgressBlock" aria-hidden="true">
+                <div class="admin-progress-info">
+                    <span id="adminProgressText">Проверка данных...</span>
+                    <span id="adminProgressPercent">0%</span>
+                </div>
+                <div class="admin-progress-bar">
+                    <div class="admin-progress-fill" id="adminProgressFill"></div>
+                </div>
+                <div class="admin-progress-error" id="adminProgressError"></div>
+                <button type="button" class="admin-progress-retry" id="adminProgressRetry">Повторить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
